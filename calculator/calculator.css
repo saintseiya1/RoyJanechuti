@@ -1,0 +1,210 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+	font-weight: bold;
+}
+
+h1 {
+	color: lightgreen;
+	font-family: cursive;
+	text-transform: uppercase;    
+	text-align: center;
+}
+
+h1:hover {
+	text-shadow: 1px 1px 2px gray, 3px 3px 5px green;
+	cursor: pointer;
+	font-family: cursive;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	background: linear-gradient(-45deg, blue, lightblue, dodgerblue);
+	background-repeat: no-repeat;
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+p {
+	display: inline-block;
+}
+
+#numberButtons {
+	height: 150px;
+	background-color: dodgerblue;
+	float: left;
+}
+
+#operationButtons {
+	width: 75px;
+	height: 100px;
+	background-color: dodgerblue;
+	float: left;
+	margin-left: 28px;
+}
+#numberButtons, #operationButtons, #keypad {
+	background: black;
+}
+
+button {
+	background: silver;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 3px;
+}
+button[value='0'] {
+	width: 70px;
+}
+
+#keypad {
+	width: 233px;
+	height: 250px;
+	border: 7px outset lightgray;
+}
+
+#grid {
+	float: left;
+}
+#grid button {
+	background-color: orange;
+}
+#grid button:hover {
+	background-color: darkorange;
+}
+button:hover {
+	background-color: grey;
+}
+
+#clear, .input{
+	width: 80px;
+}
+
+#output {
+	font-size: 120%;
+}
+
+#backspace {
+width: 70px;
+}
+
+.input {
+	background-color: darkorange;
+}
+
+.input:hover {
+	background-color: orange;
+}
+
+.highlight, .highlight:hover {
+	color: black;
+	background-color: yellow;
+	font-family: arial;
+	font-weight: bold;
+	width: 85px;
+}
+
+footer {
+	margin: 20px 0px;
+	border: 5px tomato outset;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+footer {  
+	background: linear-gradient(-45deg, red, pink, tomato);
+	background-repeat: no-repeat;
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite;
+}
+
+.active {
+	background-color: white;
+	color: black;
+	padding: 2px;
+}
+
+.hide {
+	display: none;
+}
+
+.fadeIn {
+  position: static;
+  animation-name: addition;
+  animation-duration: 3s;
+}
+
+@keyframes addition {
+  from { opacity: 0; 
+    }
+  to { opacity: 1;
+    }
+}
+
+#wrapper {
+	background: url('cartoon-calculator2.jpg');
+	background-repeat: no-repeat;
+	background-size: 140px 250px;
+	background-position: 240px 45px;
+	
+	animation-name: addition;
+	animation-duration: 3s;
+}
+
+.modal {
+	justify-content: center;
+	top: 200px;
+	left: 200px;
+}
+
+.modal img {
+	width: 200px;
+	height: 200px;
+}
+
+.modal h2, .modal img, .modal a {
+	display: block;
+}
+.exit {
+	text-align: center;
+	color: black;	
+}
+
+.modal {
+  position: relative;
+  animation-name: slideDown;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  0% { 
+  	top: -100px; 
+  	left: 0px;
+    }
+ 
+  50% {
+    top: 250px; 
+  	left: 0px;
+  }
+  100% {
+    top: 100px; 
+  	left: 0px;
+  }
+}

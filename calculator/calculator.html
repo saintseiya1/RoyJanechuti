@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="calculator.css" />
+	<script type="text/javascript" src="calculator.js" defer></script>
+</head>
+<body>	
+
+	<div id="wrapper">
+		<h1>Enter your numbers</h1>
+		<main>
+			<div id="keypad">
+				<div id="numberButtons">
+					<div id="row1">
+						<button class="number" value="7">7</button>
+						<button class="number" value="8">8</button>
+						<button class="number" value="9">9</button>
+					</div>
+
+					<div id="row2">
+						<button class="number" value="4">4</button>
+						<button class="number" value="5">5</button>
+						<button class="number" value="6">6</button>
+					</div>
+
+					<div id="row3">
+						<button class="number" value="1">1</button>
+						<button class="number" value="2">2</button>
+						<button class="number" value="3">3</button>
+					</div>
+
+					<div id="row4">
+						<button class="number" value="0">0</button>
+						<button class="number" value=".">.</button>
+					</div>
+				</div>
+
+				<div id="operationButtons">
+					<button class="operation" value="+">+</button>
+					<button class="operation" value="-">-</button>
+					<button class="operation" value="x">x</button>
+					<button class="operation" value="/">&div;</button>
+				</div>
+
+				<div id="grid">
+					<button id="backspace">&#8678;</button>
+					<button id="equals" value="=">=</button>
+					<button id="clear">CLEAR</button>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div>
+				<button id="inputA" class="input">Input A</button>
+				<span id="spA"></span>
+			</div>
+			<br>
+			<div>
+				<p>Operand &nbsp;&nbsp;&nbsp;</p>
+				<span id="spO"></span>
+			</div>
+			<br>
+			<div>
+				<button id="inputB" class="input">Input B</button>
+				<span id="spB"></span>
+			</div>
+			<br>
+			<span id="output">RESULT</span>
+		</footer>
+	</div>
+
+</body>
+</html>
