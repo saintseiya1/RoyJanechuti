@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background-color: gainsboro;
+  width: 50%;
+	text-align: center;
+  width: 450px;
+}
+
+h2 {
+	color: red;
+}
+
+h4 {
+	color: blue;
+}
+
+hr {
+  margin: 3px;
+}
+
+div, button, input {
+  padding: 1px;
+}
+
+div {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+button {
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+.addbutt {
+  background: white;
+  color: lightgreen;
+}
+
+.rembutt {
+  background: white;
+  color: tomato;
+}
+
+.addbutt:hover {
+  background: lightgreen;
+  color:white;
+}
+
+.rembutt:hover {
+  background: tomato;
+  color:white;
+}
+
+.adding {
+  position: static;
+  animation-name: addition;
+  animation-duration: 1s;
+}
+
+@keyframes addition {
+  from { opacity: 0; 
+    }
+  to { opacity: 1;
+    }
+}
+
+.remove {
+  position: absolute; 
+  animation-name: removal;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes removal {
+	from { left: 50px; 
+        opacity: 1;	
+  	}
+  to { left: 500px;
+        opacity: 0.2;
+  	}
+}
+
+/* background color animation */
+body {
+  background: linear-gradient(-45deg, lightyellow, khaki, gold, yellow);
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fadeout {
+  opacity: 0.4;
+}
+
+.hide {
+  display: none;
+}
