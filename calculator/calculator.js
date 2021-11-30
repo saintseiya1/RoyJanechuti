@@ -1,6 +1,5 @@
 let output = document.querySelector('#output');
 
-
 function main() {
 	let a = document.querySelector('main');
 	a.classList.remove('hide');
