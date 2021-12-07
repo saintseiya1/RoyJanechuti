@@ -1,0 +1,39 @@
+
+nav {
+	float: right;
+	padding: 0px 20px;
+	border-bottom: solid black 2px;
+}
+section {
+	clear: both;
+}
+
+header h1 {
+
+	color: green;
+}
+.third {
+	width: 30%;
+	min-width: 350px;
+	float: left;
+	text-align: center;
+	margin-right: 20px;
+}
+a {
+	color: black;
+	text-decoration: none;
+	margin-left: 20px;
+}
+a.current {
+	color: red;
+}
+ul li {
+	font-weight: bold;
+	text-align: left;
+	padding: 20px 0px 20px 50px;
+	border: 1px solid gray;
+	list-style: none;
+}
+a:hover {
+	color: tomato;
+}
