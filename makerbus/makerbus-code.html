@@ -8,6 +8,9 @@
 	<code>
 		<pre>
 
+MAKERBUS.JS
+///////////
+
 $(function() {		// When the DOM is ready
 
 	var times;		// Declare global variable
@@ -39,13 +42,13 @@ $(function() {		// When the DOM is ready
 
 		var newContent = '';		// To build up timetable
 		for (var i = 0; i < times[loc].length; i++) { 	// loop through sessions
-			newContent += '<li><span class="time">' + times[loc][i].time + '</span>';
-			newContent += '<a href="descriptions.html#';
+			newContent += '&ltli>&ltspan class="time">' + times[loc][i].time + '&lt/span>';
+			newContent += '&lta href="descriptions.html#';
 			newContent += times[loc][i].title.replace(/ /g, '-') + '">';
-			newContent += times[loc][i].title + '</a></li>';
+			newContent += times[loc][i].title + '&lt/a>&lt/li>';
 		}
 		
-		$('#sessions').html('<ul>' + newContent + '</ul>'); // Display time
+		$('#sessions').html('&ltul>' + newContent + '&lt/ul>'); // Display time
 
 		$('#event a.current').removeClass('current');	// Update selected link
 		$(this).addClass('current');
