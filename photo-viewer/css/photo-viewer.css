@@ -1,3 +1,7 @@
+body {
+	background-color: #eeeeee;
+}
+
 #photo-viewer {
 	position: relative;
 	height: 300px;
@@ -21,4 +25,14 @@
 
 a.active {
 	opacity: 0.3;
+}
+
+.home-link {
+	font-family: cursive; 
+	color: tomato; 
+	text-decoration: none; 
+	background: red; 
+	border: 3px double blue; 
+	font-weight: bold; 
+	text-shadow: 2px 2px 4px #000000;
 }
