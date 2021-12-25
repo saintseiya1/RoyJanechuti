@@ -5,7 +5,7 @@ var Valid = {
 	vconfpassword: false,
 	vbirthday: false,
 	vparentconsent: false,
-	vbio: false,
+	vbio: true,
 	vformvalid: false
 };
 
@@ -130,7 +130,8 @@ function success(e) {
 		(Valid.vpassword == true) && (Valid.vconfpassword == true) &&
 		(Valid.vbirthday == true) && (Valid.vparentconsent == true) &&
 		(Valid.vbio == true)) {
-			Valid.vformvalid = true
+			alert("You have successfully registered!");
+			Valid.vformvalid = true;
 	}		
 
 	if(!Valid.vformvalid) {
