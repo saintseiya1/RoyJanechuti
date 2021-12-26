@@ -4,14 +4,62 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Computer Shop</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		header {
+			background: black;
+			color:  white;
+			text-align: center;
+			padding: 10px;
+		}
+		main {
+			background: dodgerblue;
+		}
+		ul {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+
+		}
+		li {
+			width: 200px;
+			height: 200px;
+			margin:  10px;
+			border: 7px outset #eee;
+			float:  left;
+		}
+		ul li {
+						text-decoration: none;
+
+		}
+		footer {
+			background: red;
+			color: white;
+			clear: both;
+			text-align: center;
+			padding: 10px;
+		}
+	</style>
 </head>
 <body>
-	<h1>Welcome to New Computer Shop!</h1>
+	<header>
+		<h1>Welcome to New Computer Shop!</h1>
+	</header>
+	<main>
 	<ul>
 		<li>Laptop</li>
 		<li>Keyboard</li>
 		<li>Mouse</li>
 		<li>Desktop</li>
 	</ul>
+</main>
+	<footer>
+		&copy; New Computer Shop
+	</footer>
 </body>
 </html>
