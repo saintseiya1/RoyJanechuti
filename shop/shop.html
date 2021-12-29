@@ -44,7 +44,7 @@
 			color: white;
 			clear: both;
 			text-align: center;
-			padding: 10px;
+			padding: 30px;
 		}
 		img {
 			
@@ -57,16 +57,22 @@
 	<header>
 		<h1>Welcome to New Computer Shop!</h1>
 	</header>
+
 	<main>
-	<ul>
-		<li><img src="images/laptop.png"><p>Laptop</p></li>
-		<li><img src="images/keyboard.png">Keyboard</li>
-		<li><img src="images/mouse.png">Mouse</li>
-		<li><img src="images/desktop.png">Desktop</li>
-	</ul>
-</main>
+		<ul>
+			<li><img src="images/laptop.png" class="stuff" name="lap">Laptop</li>
+			<li><img src="images/keyboard.png" class="stuff" name="key">Keyboard</li>
+			<li><img src="images/mouse.png">Mouse</li>
+			<li><img src="images/desktop.png">Desktop</li>
+		</ul>
+		<button id="add_to_cart" name="shop">&#128722;</button>
+		<span id="checkout"></span>
+	</main>
+
 	<footer>
 		&copy; New Computer Shop
 	</footer>
+
+	<script type="text/javascript" src="shop.js"></script>
 </body>
 </html>
