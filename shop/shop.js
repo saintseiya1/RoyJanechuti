@@ -1,13 +1,14 @@
-
-
-let atc = document.getElementById('add_to_cart');
-atc.addEventListener('click', add_item);
+let atc = document.querySelectorAll('.items'); 
 let output = document.getElementById('checkout');
 
-function add_item()
+
+for(i = 0; i < atc.length; i++)
 {
-
-	output.innerHTML += 'You have added to cart a ' + this.name + '<br>';
-
+	atc[i].addEventListener('click', add_item);
 }
 
+function add_item() 
+{
+	output.innerHTML += 'You have added a ' + '<span class="highlight">' + 
+		this.name + '</span>' + ' to your shopping cart!<br>';
+}
