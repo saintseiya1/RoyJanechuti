@@ -4,58 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Computer Shop</title>
-	<style type="text/css">
-		* {
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-			font-family: sans-serif;
-		}
-		header {
-			background: black;
-			color:  white;
-			text-align: center;
-			padding: 10px;
-		}
-		main {
-			background: dodgerblue;
-			padding: 30px;
-		}
-		ul {
-			margin: 20px;
-			display: flex;
-			justify-content: center;
-			text-align: center;
-			
-		}
-		li {
-			width: 200px;
-			height: 200px;
-			margin:  10px;
-			border: 5px outset #eee;
-			float:  left;
-			list-style-type: none;
-		}
-		li:hover {
-			background: lightblue;
-			cursor: pointer;
-		}
-		footer {
-			background: red;
-			color: white;
-			clear: both;
-			text-align: center;
-			padding: 30px;
-		}
-		img {
-			
-			width: 150px;
-			height: 150px;
-		}
-		.highlight {
-			color: red;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
@@ -64,12 +13,12 @@
 
 	<main>
 		<ul>
-			<li><img src="images/laptop.png" class="items" name="laptop">Laptop</li>
-			<li><img src="images/keyboard.png" class="items" name="keyboard">Keyboard</li>
-			<li><img src="images/mouse.png" class="items" name="mouse">Mouse</li>
-			<li><img src="images/desktop.png" class="items" name="desktop">Desktop</li>
+			<li><img src="images/laptop.png" class="items" >Laptop</li>
+			<li><img src="images/keyboard.png" class="items" >Keyboard</li>
+			<li><img src="images/mouse.png" class="items" >Mouse</li>
+			<li><img src="images/desktop.png" class="items" >Desktop</li>
 		</ul>
-		<button id="add_to_cart" name="shop">&#128722;</button>
+		<button id="cart" name="shop">&#128722;</button>
 		<span id="checkout"></span>
 	</main>
 
