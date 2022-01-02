@@ -31,12 +31,14 @@ li {
 	height: 200px;
 	margin:  10px;
 	border: 5px outset #eee;
-	float:  left;
+/*	float:  left;*/
 	list-style-type: none;
 }
 li:hover {
 	background: lightblue;
 	cursor: pointer;
+/*	width: 205px;
+	height: 205px;*/
 }
 footer {
 	background: red;
@@ -46,10 +48,13 @@ footer {
 	padding: 30px;
 	margin-bottom: 0;
 }
-img {
-	
+img {	
 	width: 150px;
 	height: 150px;
+}
+li img:hover {
+	width:  160px;
+	height:  160px;
 }
 .highlight {
 	color: yellow;
