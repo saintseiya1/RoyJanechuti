@@ -76,3 +76,15 @@ header {
 	50% {left: 300px;}
 	100% {left: 0px;}
 }
+
+.hide {
+	animation: fadeOut 5s ease-out forwards;
+}
+@keyframes fadeOut {
+	0% {opacity: 1}
+	100% {opacity: 0}
+}
+
+.active, .active:hover{
+	background: blue;
+}

@@ -9,6 +9,7 @@ for(i = 0; i < atc.length; i++)
 
 function add_item() 
 {
+	this.classList.toggle('active')
 	output.innerHTML += 'You have added a ' + '<span class="highlight">' + 
 		this.innerText + '</span>' + ' to your shopping cart!<br>';
 }
