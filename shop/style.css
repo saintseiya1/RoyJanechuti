@@ -88,3 +88,15 @@ header {
 .active, .active:hover{
 	background: blue;
 }
+
+h3 {
+	color: gray;
+	display: block;
+	position: relative;
+	left:  900px;
+	animation: scrollLeft 15s ease-out 2s infinite;
+}
+@keyframes scrollLeft {
+	0% {left: 900px}
+	100% {left: -900px}
+}
