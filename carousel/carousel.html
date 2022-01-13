@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bootstrap Plugins</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style>
+		img {
+			max-height: 600px;
+		}
+</style>
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5.shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<div id="bestCarsCarousel" class="carousel slide container" data-ride="carousel">
+		<div class="row">
+			<div class="col-sm">
+		
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#bestCarsCarousel" data-slide-to="0"
+			class="active"></li>
+			<li data-target="#bestCarsCarousel" data-slide-to="1"></li>
+			<li data-target="#bestCarsCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="images/car1.jpg" class="d-block w-100 h-50"/>
+				<div class="carousel-caption">
+					<h3>Car 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua.</p>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img src="images/car2.jpg" class="d-block w-100" />
+				<div class="carousel-caption">
+					<h3>Car 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua.</p>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img src="images/car3.jpg" class="d-block w-100" />
+				<div class="carousel-caption">
+					<h3>Car 3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="carousel-control-prev" href="#bestCarsCarousel" data-slide="prev">
+			<img src="images/chevron-left.png" />
+		</a>
+		<a class="carousel-control-next" href="#bestCarsCarousel" data-slide="next">
+			<img src="images/chevron-right.png" />
+		</a>
+	</div>
+</div>
+</div>
+
+
+
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
