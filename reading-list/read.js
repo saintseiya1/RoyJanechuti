@@ -11,6 +11,17 @@ let isbn = document.querySelector('.isbn')
 let f = document.querySelectorAll('.field')
 
 function addEntry() {
+	if (id.value == '' ||
+		titles.value == '' ||
+		author.value == '' ||
+		year.value == '' ||
+		isbn.value == ''
+		)
+	{
+		alert('Please insert all values')
+		return
+	}
+
 	let t = document.querySelector('.tb')
 	t.innerHTML += `<tr><td>${id.value}</td><td>${titles.value}</td>
 		<td>${author.value}</td><td>${year.value}</td><td>${isbn.value}</td></tr></tbody></table>`
