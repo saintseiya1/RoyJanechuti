@@ -1,4 +1,3 @@
-
 let but = document.querySelector('.add')
 but.addEventListener('click', addEntry)
 
@@ -24,7 +23,7 @@ function addEntry() {
 
 	let t = document.querySelector('.tb')
 	t.innerHTML += `<tr><td>${id.value}</td><td>${titles.value}</td>
-		<td>${author.value}</td><td>${year.value}</td><td>${isbn.value}</td></tr></tbody></table>`
+		<td>${author.value}</td><td>${year.value}</td><td>${isbn.value}</td></tr>`
 	
 	for (let i = 0; i < f.length; i++) {
 		f[i].value = ''
