@@ -9,7 +9,8 @@ let isbn = document.querySelector('.isbn')
 
 let f = document.querySelectorAll('.field')
 
-function addEntry() {
+function addEntry(e) {
+	e.preventDefault()
 	if (id.value == '' ||
 		titles.value == '' ||
 		author.value == '' ||

@@ -8,14 +8,15 @@
 		* {
 			box-sizing: border-box;
 			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
 		}
 		#header {
 			background: dodgerblue;
-			display: block;
-			border: 3px solid blue;
 			text-align: center;
 			color:  white;
 			font-family: cursive;
+			margin-bottom: 50px;
 		}
 		table, th, td {
 			border-collapse: collapse;
@@ -23,17 +24,30 @@
 			padding:  10px;
 		}
 		.main {
-			width:  100%;
+			background-color: red;
+			width: 100%;
 		}
 		.col1, .col2 {
-			width: 50%;
+/*			display: none;
+*/			width: 50%;
 			float:  left;
+			width:  500px;
+		}
+		.col1 {
+			background: yellow;
+			text-align: center;
 		}
 		.col2 {
-			margin-top: 10px;
-		}
+			background: blue;
+						text-align: center;
+
+/*			margin-top: 10px;
+*/		}
 		.title {
 			margin:  0;
+		}
+		form {
+			line-height: 0.2;
 		}
 
 	</style>
@@ -49,12 +63,15 @@
 
 		<div class="col1">			
 			<h3 class="title">My Reading List</h3>
-			Id 		<input type="text" class="field id">
-			Title 	<input type="text" class="field titles">
-			Author 	<input type="text" class="field author">
-			Year 	<input type="text" class="field year">
-			ISBN 	<input type="text" class="field isbn">
-					<input type="submit" class="add" value="&plus; ADD RECORD">
+			<form><pre>
+			<p><label>Id</label>		<input type="text" class="field id"></p>
+			<p><label>Title</label>		<input type="text" class="field titles"></p>
+			<p><label>Author</label>	<input type="text" class="field author"></p>
+			<p><label>Year</label>	<input type="text" class="field year"></p>
+			<p><label>ISBN</label>	<input type="text" class="field isbn"></p>
+			<input type="submit" class="add" value="&plus; ADD RECORD">
+				</pre>
+				</form>
 
 		</div>
 
