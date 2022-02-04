@@ -13,7 +13,7 @@
 		}
 		#header {
 			background: dodgerblue;
-			text-align: center;
+			display: flex;
 			color:  white;
 			font-family: cursive;
 			margin-bottom: 50px;
@@ -24,12 +24,12 @@
 			padding:  10px;
 		}
 		.main {
+			clear:  both;
 			background-color: red;
 			width: 100%;
 		}
 		.col1, .col2 {
-/*			display: none;
-*/			width: 50%;
+		width: 50%;
 			float:  left;
 			width:  500px;
 		}
@@ -39,15 +39,24 @@
 		}
 		.col2 {
 			background: blue;
-						text-align: center;
-
-/*			margin-top: 10px;
-*/		}
-		.title {
-			margin:  0;
-		}
+			text-align: center;
+}
 		form {
 			line-height: 0.2;
+		}
+		#header .col-sm {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 25%;
+			background-color: red;
+		}
+		#header .col-md {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 75%;
+			background-color: seagreen;
 		}
 
 	</style>
@@ -55,8 +64,8 @@
 <body>
 
 	<div id="header">
-		<img src="books.png" height="100" width="100" alt="books" />
-		<span class="title"> RHJ DESIGN </span>
+		<div class="col-sm"><img src="books.png" height="100" width="100" alt="books" /></div>
+		<div class="col-md"><span>RHJ DESIGN</span></div>
 	</div>
 
 	<div class="main">
