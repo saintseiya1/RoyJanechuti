@@ -24,7 +24,8 @@ function addEntry(e) {
 
 	let t = document.querySelector('.tb')
 	t.innerHTML += `<tr><td>${id.value}</td><td>${titles.value}</td>
-		<td>${author.value}</td><td>${year.value}</td><td>${isbn.value}</td></tr>`
+		<td>${author.value}</td><td>${year.value}</td><td>${isbn.value}</td>
+		<td><a href="#">X</a></td></tr>`
 	
 	for (let i = 0; i < f.length; i++) {
 		f[i].value = ''
