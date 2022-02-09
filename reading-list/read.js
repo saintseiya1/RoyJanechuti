@@ -1,6 +1,6 @@
 let but = document.querySelector('.add')
 but.addEventListener('click', addEntry)
-
+// but.addEventListener('click', checkEmpty)
 let id = document.querySelector('.id')
 let titles = document.querySelector('.titles')
 let author = document.querySelector('.author')
@@ -46,4 +46,17 @@ function deleteEntry(e) {
 	tr = this.parentNode.parentNode
 	tbody = this.parentNode.parentNode.parentNode
 	tbody.removeChild(tr)
+}
+
+function checkEmpty(e) {
+	e.preventDefault()
+	emptyArray = []
+	f = document.querySelectorAll('.field')
+	for(i = 0; i < f.length; i++) {
+		if(f[i].value == '') {
+			f[i].classList.add('empty')
+		} else {
+			f[i].classList.remove('empty')
+		}
+	}
 }
