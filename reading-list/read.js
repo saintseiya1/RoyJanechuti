@@ -16,7 +16,6 @@ function addEntry(e) {
 			alert('One or more fields are blank!')
 			return
 		}
-	alert("go on")
 	let t = document.querySelector('.tb')
 	t.innerHTML += `<tr><td>${id.value}</td><td>${titles.value}</td>
 		<td>${author.value}</td><td>${year.value}</td><td>${isbn.value}</td>
@@ -43,28 +42,25 @@ function deleteEntry(e) {
 	tbody.removeChild(tr)
 }
 
+		
 function checkEmpty() {
-	// if (id.value == '' ||
-	// titles.value == '' ||
-	// author.value == '' ||
-	// year.value == '' ||
-	// isbn.value == ''
-	// )
-	// {
-	// 	alert('Please insert all values')
-		f = document.querySelectorAll('.field')
-		for(i = 0; i < f.length; i++) {
-			if(f[i].value == '') {
-				f[i].classList.add('empty')
-				console.log(f[i].class)
-			} else {
-				if(f[i].classList.contains('empty')) {
-					f[i].classList.remove('empty')
-				}
+	f = document.querySelectorAll('.field')
+	for(i = 0; i < f.length; i++) {
+		if(f[i].value == '') {
+			f[i].classList.add('empty')	
+		} else {
+			if(f[i].classList.contains('empty')) {
+				f[i].classList.remove('empty')					
 			}
 		}
-
-		return true
-		
-	// }
+	}
+	if (id.value == '' ||
+	titles.value == '' ||
+	author.value == '' ||
+	year.value == '' ||
+	isbn.value == ''
+	)
+		{
+			return true
+		}
 }
