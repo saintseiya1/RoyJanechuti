@@ -1,17 +1,14 @@
-let but = document.querySelector('.add')
-but.addEventListener('click', addEntry)
-// but.addEventListener('click', checkEmpty)
+let add = document.querySelector('.add')
 let id = document.querySelector('.id')
 let titles = document.querySelector('.titles')
 let author = document.querySelector('.author')
 let year = document.querySelector('.year')
 let isbn = document.querySelector('.isbn')
+let field = document.querySelectorAll('.field')
 
-let f = document.querySelectorAll('.field')
-
-function addEntry(e) {
+let addEntry = (e)=> {
 	e.preventDefault()
-	if(checkEmpty())
+	if(checkIfBlank())
 		{
 			alert('One or more fields are blank!')
 			return
@@ -28,12 +25,11 @@ function addEntry(e) {
 		d[i].addEventListener('click', deleteEntry)
 	}
 	
-	for (let i = 0; i < f.length; i++) {
-		f[i].value = ''
+	for (let i = 0; i < field.length; i++) {
+		field[i].value = ''
 	}
-
 }
-
+add.addEventListener('click', addEntry)
 
 function deleteEntry(e) {
 	e.preventDefault()
@@ -41,16 +37,14 @@ function deleteEntry(e) {
 	tbody = this.parentNode.parentNode.parentNode
 	tbody.removeChild(tr)
 }
-
 		
-function checkEmpty() {
-	f = document.querySelectorAll('.field')
-	for(i = 0; i < f.length; i++) {
-		if(f[i].value == '') {
-			f[i].classList.add('empty')	
+function checkIfBlank() {
+	for(i = 0; i < field.length; i++) {
+		if(field[i].value == '') {
+			field[i].classList.add('empty')	
 		} else {
-			if(f[i].classList.contains('empty')) {
-				f[i].classList.remove('empty')					
+			if(field[i].classList.contains('empty')) {
+				field[i].classList.remove('empty')					
 			}
 		}
 	}
