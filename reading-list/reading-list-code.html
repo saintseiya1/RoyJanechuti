@@ -4,82 +4,84 @@
 	<title></title>
 </head>
 <body>
-
-	<code>
-		<pre>
+		
 	<a class="home-link" href="../index.html">RHJ Design</a>
+	<p>reading-list.js</p>
 
-reading-list.JS
-<hr>
-
-let but = document.querySelector('.add')
-but.addEventListener('click', addEntry)
-// but.addEventListener('click', checkEmpty)
+<textarea
+    style="width:100%;  border: 1px solid gray;"
+    rows="70" >
+// Create variables
+let add = document.querySelector('.add')
 let id = document.querySelector('.id')
 let titles = document.querySelector('.titles')
 let author = document.querySelector('.author')
 let year = document.querySelector('.year')
 let isbn = document.querySelector('.isbn')
+let field = document.querySelectorAll('.field')
 
-let f = document.querySelectorAll('.field')
-
-function addEntry(e) {
+// adding entries
+let addEntry = (e)=> {
 	e.preventDefault()
-	if(checkEmpty())
+
+	// checks if entries are blank
+	if(checkIfBlank())
 		{
 			alert('One or more fields are blank!')
 			return
 		}
+
+	// renders the HTML for the entries
 	let t = document.querySelector('.tb')
 	t.innerHTML += `<tr><td>${id.value}</td><td>${titles.value}</td>
 		<td>${author.value}</td><td>${year.value}</td><td>${isbn.value}</td>
 		<td><a class="delete" href="#">X</a></td></tr>`
 
+	// adds a delete class for each entry
 	let d = document.querySelectorAll('.delete');
-
 	for(let i = 0; i < d.length; i++) {
 		// console.log(d[i])
 		d[i].addEventListener('click', deleteEntry)
 	}
 	
-	for (let i = 0; i < f.length; i++) {
-		f[i].value = ''
+	// resets the form values to blanks
+	for (let i = 0; i < field.length; i++) {
+		field[i].value = ''
 	}
-
 }
+add.addEventListener('click', addEntry)
 
-
+// deletes the entry
 function deleteEntry(e) {
 	e.preventDefault()
-	tr = this.parentNode.parentNode
-	tbody = this.parentNode.parentNode.parentNode
+	let tr = this.parentNode.parentNode
+	let tbody = this.parentNode.parentNode.parentNode
 	tbody.removeChild(tr)
 }
-
-		
-function checkEmpty() {
-	f = document.querySelectorAll('.field')
-	for(i = 0; i < f.length; i++) {
-		if(f[i].value == '') {
-			f[i].classList.add('empty')	
+	
+// checks for blank values	
+let checkIfBlank = ()=> {
+	for(i = 0; i < field.length; i++) {
+		if(field[i].value == '') {
+			field[i].classList.add('empty')	
 		} else {
-			if(f[i].classList.contains('empty')) {
-				f[i].classList.remove('empty')					
+			if(field[i].classList.contains('empty')) {
+				field[i].classList.remove('empty')					
 			}
 		}
 	}
+	// if any value is left blank, true is returned
 	if (id.value == '' ||
-	titles.value == '' ||
-	author.value == '' ||
-	year.value == '' ||
-	isbn.value == ''
+		titles.value == '' ||
+		author.value == '' ||
+		year.value == '' ||
+		isbn.value == ''
 	)
 		{
 			return true
 		}
 }
+</textarea>
 
-</pre>
-</code>
 </body>
 </html>
