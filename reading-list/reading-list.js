@@ -41,14 +41,12 @@ add.addEventListener('click', addEntry)
 // deletes the entry
 function deleteEntry(e) {
 	e.preventDefault()
-	tr = this.parentNode.parentNode
-	tbody = this.parentNode.parentNode.parentNode
+	let tr = this.parentNode.parentNode
+	let tbody = this.parentNode.parentNode.parentNode
 	tbody.removeChild(tr)
 }
 	
 // checks for blank values	
-// if value is blank, class of empty is added
-// if value exists, class of empty is removed
 let checkIfBlank = ()=> {
 	for(i = 0; i < field.length; i++) {
 		if(field[i].value == '') {
@@ -59,7 +57,6 @@ let checkIfBlank = ()=> {
 			}
 		}
 	}
-
 	// if any value is left blank, true is returned
 	if (id.value == '' ||
 		titles.value == '' ||
