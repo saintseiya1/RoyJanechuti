@@ -4,13 +4,13 @@
 	<title></title>
 </head>
 <body>
+		
+	<a class="home-link" href="../index.html#photo-viewer">RHJ Design</a>
+	<p>photo-viewer.js</p>
 
-	<code>
-		<pre>
-	<a class="home-link" href="../index.html">RHJ Design</a>
-
-PHOTO-VIEWER.JS
-<hr>
+<textarea
+    style="width:100%;  border: 1px solid gray;"
+    rows="70" >
 
 var request;						// Latest image to be requested
 var $current;						// Image currently being shown
@@ -35,9 +35,6 @@ function crossfade($img) {			// Function to fade between images
 
 }
 
-////////////////
-photo-viewer2.js
-////////////////
 
 $(document).on('click', '.thumb', function(e) {	// When a thumb is clicked on
 	var $img;									// Create local variable called $img
@@ -84,7 +81,6 @@ $(document).on('click', '.thumb', function(e) {	// When a thumb is clicked on
 // Last line runs once (when rest of script has loaded) to show the first image
 $('.thumb').eq(0).click();					// Simulate click on first thumbnail
 
-</pre>
-</code>
+</textarea>
 </body>
 </html>
