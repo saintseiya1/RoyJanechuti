@@ -1,7 +1,16 @@
-let b = document.querySelector('.button');
-
+let m = document.querySelectorAll('.mightyglyph');
+console.log(m)
 function enlarge() {
-	this.className = 'test';
+
+	this.classList.add('test')
+}
+function decrease() {
+
+	this.classList.remove('test');
 }
 
-b.addEventListener('click', enlarge);
+for (var i = 0; i < m.length; i++) {
+	m[i].addEventListener('mouseover', enlarge);
+	m[i].addEventListener('mouseleave', decrease);
+
+}
