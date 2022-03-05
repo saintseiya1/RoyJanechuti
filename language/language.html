@@ -5,18 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Thai Alphabet</title>
 	<style>
+		* {
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		header h1 {
+			margin: 20px 0;
+		}
 		.mightyglyph {
 			font-size: 2.5em;
 			text-align: center;
 			font-weight: normal;
 			color: #029;
 			line-height: 1;
-			transition: font-size 0.5s ease-in-out;
 		}
-/*		.mightyglyph:hover {
-			font-size: 3.5em;
+		.mightyglyph:hover {
+			background-color: dodgerblue;
+			color: white;
 			cursor: pointer;
-		}*/
+		}
 		table, th, td{
 			border: 1px solid #eee;
 			padding: 5px;
@@ -29,39 +38,56 @@
 		.test {
 			font-size: 4em;
 		}
-		#viewer {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width:  300px;
-			height: 300px;
-			border: 3px solid blue;
-/*			position: fixed;
-			top: 100px;
-			right: 100px;*/
-		}
 		.container {
-			display: flex;
-			justify-content: space-around;
+/*			display: flex;
+			justify-content: space-around;*/
 		}
 		.col-md-12 {
 			text-align: center;
 		}
 		.col-md-4 {
+			padding: 0px 50px;
+			width: 33.33%;
+			margin-top: 30px;
+			float: left;
 		}
 		.stick {
 			width: 350px;
 			height:  350px;
+		}
+		#viewer {
+
+			width:  300px;
+			height: 300px;
+			border: 3px solid blue;
+			position: fixed;
+			top: 85px;
+			right: 80px;
+		}
+		#image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 6rem;
+			height: 240px;
+		}
+		#caption {
+			font-size: 1rem;
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 60px;
 		}
 		
 	</style>
 </head>
 <body>
 
-<div class="col-md-12">
+<header class="col-md-12">
 	<h1>Thai Alphabet</h1>
 	<hr>
-</div>
+</header>
 
 <div class="container">
 
@@ -468,7 +494,8 @@
 		<td> CHARACTER MAI YAMOK (Repitition Mark)</td>
 		<td class="mightyglyph">&#3654;</td>
 		</tr>
-		<tr><td> CHARACTER THANTHAKHAT ( THANTHAKHAT)</td>
+		<tr>
+		<td> CHARACTER THANTHAKHAT ( THANTHAKHAT)</td>
 		<td class="mightyglyph">&#3660;</td>
 		</tr>
 		<tr>
@@ -497,8 +524,9 @@
 		<p class="anav"> <a href="#top">Top of Page</a></p>
 	</div>
 
-	<div class="col-md-4 col-right">
-		<div id="viewer"></div>
+	<div id="viewer" class="col-md-4 col-right">
+		<div id="image"></div>
+		<div id="caption"></div>
 	</div>
 
 </div>

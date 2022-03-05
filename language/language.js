@@ -1,11 +1,12 @@
-let m = document.querySelectorAll('.mightyglyph');
-let viewer = document.querySelector('#viewer');
+let mg = document.querySelectorAll('.mightyglyph');
+let image = document.querySelector('#image');
+let caption = document.querySelector('#caption');
 
 // console.table(v.parentElement)
 
-for (var i = 0; i < m.length; i++) {
-	m[i].addEventListener('mouseover', show);
-	m[i].addEventListener('mouseleave', hide);
+for (var i = 0; i < mg.length; i++) {
+	mg[i].addEventListener('mouseover', show);
+	mg[i].addEventListener('mouseleave', hide);
 
 }
 
@@ -17,11 +18,14 @@ function show() {
 	// select the character symbol
 	let characterSymbol = this.innerText
 	// output the symbol and text to the viewer
-	viewer.innerHTML = characterSymbol + "<br>" + characterText
+	image.innerText = characterSymbol
+	caption.innerText = characterText
 }
 
 function hide() {
 	// clear the viewer
-	viewer.innerText = ''
+	image.innerText = ''
+	caption.innerText = ''
+
 
 }
