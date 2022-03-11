@@ -1,3 +1,4 @@
+let init = ()=> {
 let mg = document.querySelectorAll('.mightyglyph')
 let image = document.querySelector('#image')
 let caption = document.querySelector('#caption')
@@ -27,3 +28,6 @@ function hide() {
 	image.innerText = ''
 	caption.innerText = ''
 }
+}
+
+init();

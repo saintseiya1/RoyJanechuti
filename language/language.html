@@ -16,7 +16,6 @@
 		  background-size: cover;
 		}
 
-
 		h2 {
 			text-align: center;
 		}
@@ -60,7 +59,7 @@
 		}
 		.stick {
 			width: 350px;
-			height:  350px;
+			height: 350px;
 		}
 		#viewer {
 
@@ -68,7 +67,7 @@
 			height: 300px;
 			border: 3px solid blue;
 			position: fixed;
-			top: 85px;
+			top: 120px;
 			right: 80px;
 		}
 		#image {
@@ -88,19 +87,21 @@
 		}
 	
 	</style>
+		
+
 </head>
 <body>
+	<div class="local" id="top"></div>
 
-<header class="col-md-12">
+	<canvas id='mycanvas' width="1100" ></canvas>
+<!-- <header class="col-md-12">
 	<h1>Thai Alphabet</h1>
 	<hr>
-</header>
+</header> -->
 
 <div class="container">
 
 	<div class="col-md-4 col-left">
-		<div class="local" id="top"></div>
-
 		<h3>Page Content</h3>
 		<ul>
 		<li><a href="#consonants">Consonants</a></li>
@@ -531,5 +532,26 @@
 
 
 <script type="text/javascript" src="language.js"></script>
+<script src='OSC.js'></script>
+	<script>
+		canvas = O('mycanvas')
+		context = canvas.getContext('2d')
+		S(canvas).background = 'transparent'
+		
+		context.font = 'bold 140px Times'
+		context.textBaseline = 'top'
+		
+		image = new Image()
+		image.src = 'wicker.jpg'
+		
+		image.onload = function()
+		{
+			pattern = context.createPattern(image, 'repeat')
+			context.fillStyle = pattern
+			context.fillText('Thai Alphabet', 150, 0)
+			context.strokeText('Thai Alphabet', 150, 0)
+		}
+		
+	</script>
 </body>
 </html>
