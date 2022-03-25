@@ -4,554 +4,450 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Thai Alphabet</title>
-	<style>
-		* {
-			font-family: sans-serif;
-			margin: 0px;
-			padding: 0px;
-			box-sizing: border-box;
-		}
-		html {
-		  background: url('thailand-banner.jpg') no-repeat center fixed;
-		  background-size: cover;
-		}
-
-		h2 {
-			text-align: center;
-		}
-		.mightyglyph {
-			font-size: 2.5em;
-			text-align: center;
-			font-weight: normal;
-			color: #029;
-			line-height: 1;
-		}
-		.mightyglyph:hover {
-			background-color: dodgerblue;
-			color: white;
-			cursor: pointer;
-		}
-		table, th, td{
-			border: 1px solid #eee;
-			padding: 5px;
-			border-collapse: collapse;
-			background-color: white;
-		}
-		th {
-			background-color: navy;
-			color: white;
-		}
-		.test {
-			font-size: 4em;
-		}
-		.container {
-/*			display: flex;
-			justify-content: space-around;*/
-		}
-		.col-md-12 {
-			text-align: center;
-		}
-		.col-md-4 {
-			padding: 0px 50px;
-			width: 33.33%;
-			margin-top: 30px;
-			float: left;
-		}
-		.stick {
-			width: 350px;
-			height: 350px;
-		}
-		#viewer {
-
-			width:  300px;
-			height: 300px;
-			border: 3px solid blue;
-			position: fixed;
-			top: 120px;
-			right: 80px;
-		}
-		#image {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 6rem;
-			height: 240px;
-		}
-		#caption {
-			font-size: 1rem;
-			font-weight: 700;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 60px;
-		}
-	
-	</style>
-		
-
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body>
 	<div class="local" id="top"></div>
 
 	<canvas id='mycanvas' width="1100" ></canvas>
-<!-- <header class="col-md-12">
-	<h1>Thai Alphabet</h1>
-	<hr>
-</header> -->
+	<!-- <header class="col-md-12">
+		<h1>Thai Alphabet</h1>
+		<hr>
+	</header> -->
 
-<div class="container">
+	<div class="container">
+		<div class="col-md-4 col-left">
+			<h3>Page Content</h3>
+			<ul>
+			<li><a href="#consonants">Consonants</a></li>
+			<li><a href="#vowels">Vowels</a></li>
+			<li><a href="#tones">Tone Marks</a></li>
+			<li><a href="#digits">Numbers</a></li>
+			<li><a href="#punc">Punctuation and Symbols</a></li>
+			</ul>
+		</div>
 
-	<div class="col-md-4 col-left">
-		<h3>Page Content</h3>
-		<ul>
-		<li><a href="#consonants">Consonants</a></li>
-		<li><a href="#vowels">Vowels</a></li>
-		<li><a href="#tones">Tone Marks</a></li>
-		<li><a href="#digits">Numbers</a></li>
-		<li><a href="#punc">Punctuation and Symbols</a></li>
-		</ul>
+		<div class="col-md-4">
+			<h2 id="consonants">Consonants</h2>
+		<table class="chart" cellspacing="0">
+			<tbody><tr>
+			</tr><tr>
+			<th scope="col">Name</th>
+			<th scope="col">Symbol</th>
+			</tr>
+			<tr>
+			<td>  KO KAI </td>
+			<td class="mightyglyph">&#3585;</td>
+			</tr>
+			<tr>
+			<td>  KHO KHAI </td>
+			<td class="mightyglyph">&#3586;</td>
+			</tr>
+			<tr>
+			<td>  KHO KHUAT</td>
+			<td class="mightyglyph">&#3587;</td>
+			</tr>
+			<tr>
+			<td>  KHO KHWAI</td>
+			<td class="mightyglyph">&#3588;</td>
+			</tr>
+			<tr>
+			<td>  KHO KHON </td>
+			<td class="mightyglyph">&#3589;</td>
+			</tr>
+			<tr>
+			<td>  KHO RAKHANG </td>
+			<td class="mightyglyph">&#3590;</td>
+			</tr>
+			<tr>
+			<td>  NGO NGU </td>
+			<td class="mightyglyph">&#3591;</td>
+			</tr>
+			<tr>
+			<td>  CHO CHAN </td>
+			<td class="mightyglyph">&#3592;</td>
+			</tr>
+			<tr>
+			<td>  CHO CHING </td>
+			<td class="mightyglyph">&#3593;</td>
+			</tr>
+			<tr>
+			<td>  CHO CHANG</td>
+			<td class="mightyglyph">&#3594;</td>
+			</tr>
+			<tr>
+			<td>  SO SO </td>
+			<td class="mightyglyph">&#3595;</td>
+			</tr>
+			<tr>
+			<td>  CHO CHOE </td>
+			<td class="mightyglyph">&#3596;</td>
+			</tr>
+			<tr>
+			<td>  YO YING </td>
+			<td class="mightyglyph">&#3597;</td>
+			</tr>
+			<tr>
+			<td>  DO CHADA </td>
+			<td class="mightyglyph">&#3598;</td>
+			</tr>
+			<tr>
+			<td>  TO PATAK </td>
+			<td class="mightyglyph">&#3599;</td>
+			</tr>
+			<tr>
+			<td>  THO THAN </td>
+			<td class="mightyglyph">&#3600;</td>
+			</tr>
+			<tr>
+			<td>  THO NANGMONTHO </td>
+			<td class="mightyglyph">&#3601;</td>
+			</tr>
+			<tr>
+			<td>  THO PHUTHAO </td>
+			<td class="mightyglyph">&#3602;</td>
+			</tr>
+			<tr>
+			<td>  NO NEN </td>
+			<td class="mightyglyph">&#3603;</td>
+			</tr>
+			<tr>
+			<td>  DO DEK </td>
+			<td class="mightyglyph">&#3604;</td>
+			</tr>
+			<tr>
+			<td>  TO TAO </td>
+			<td class="mightyglyph">&#3605;</td>
+			</tr>
+			<tr>
+			<td>  THO THUNG</td>
+			<td class="mightyglyph">&#3606;</td>
+			</tr>
+			<tr>
+			<td>  THO THAHAN </td>
+			<td class="mightyglyph">&#3607;</td>
+			</tr>
+			<tr>
+			<td>  THO THONG</td>
+			<td class="mightyglyph">&#3608;</td>
+			</tr>
+			<tr>
+			<td>  NO NU </td>
+			<td class="mightyglyph">&#3609;</td>
+			</tr>
+			<tr>
+			<td>  BO BAIMAI </td>
+			<td class="mightyglyph">&#3610;</td>
+			</tr>
+			<tr>
+			<td>  PO PLA </td>
+			<td class="mightyglyph">&#3611;</td>
+			</tr>
+			<tr>
+			<td>  PHO PHUNG</td>
+			<td class="mightyglyph">&#3612;</td>
+			</tr>
+			<tr>
+			<td>  FO FA </td>
+			<td class="mightyglyph">&#3613;</td>
+			</tr>
+			<tr>
+			<td>  PHO PHAN </td>
+			<td class="mightyglyph">&#3614;</td>
+			</tr>
+			<tr>
+			<td>  FO FAN </td>
+			<td class="mightyglyph">&#3615;</td>
+			</tr>
+			<tr>
+			<td>  PHO SAMPHAO </td>
+			<td class="mightyglyph">&#3616;</td>
+			</tr>
+			<tr>
+			<td>  MO MA </td>
+			<td class="mightyglyph">&#3617;</td>
+			</tr>
+			<tr>
+			<td>  YO YAK </td>
+			<td class="mightyglyph">&#3618;</td>
+			</tr>
+			<tr>
+			<td>  RO RUA </td>
+			<td class="mightyglyph">&#3619;</td>
+			</tr>
+			<tr>
+			<td>  RU </td>
+			<td class="mightyglyph">&#3620;</td>
+			</tr>
+			<tr>
+			<td>  LO LING </td>
+			<td class="mightyglyph">&#3621;</td>
+			</tr>
+			<tr>
+			<td>  LU</td>
+			<td class="mightyglyph">&#3622;</td>
+			</tr>
+			<tr>
+			<td>  WO WAEN </td>
+			<td class="mightyglyph">&#3623;</td>
+			</tr>
+			<tr>
+			<td>  SO SALA </td>
+			<td class="mightyglyph">&#3624;</td>
+			</tr>
+			<tr>
+			<td>  SO RUSI</td>
+			<td class="mightyglyph">&#3625;</td>
+			</tr>
+			<tr>
+			<td>  SO SUA </td>
+			<td class="mightyglyph">&#3626;</td>
+			</tr>
+			<tr>
+			<td>  HO HIP </td>
+			<td class="mightyglyph">&#3627;</td>
+			</tr>
+			<tr>
+			<td>  LO CHULA </td>
+			<td class="mightyglyph">&#3628;</td>
+			</tr>
+			<tr>
+			<td>  O ANG </td>
+			<td class="mightyglyph">&#3629;</td>
+			</tr>
+			<tr>
+			<td>  HO NOKHUK </td>
+			<td class="mightyglyph">&#3630;</td>
+			</tr>
+			</tbody>
+		</table>
+			<h2 id="vowels">Vowels</h2>
+			<p>These vowel signs come <b>above or after</b> the  consonant.</p>
+			<h4>Above/After the Consonant Signs</h4>
+		<table class="chart" cellspacing="0">
+			<tbody><tr>
+			</tr><tr>
+			<th scope="col">Name</th>
+			<th scope="col">Symbol</th>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA A</td>
+			<td class="mightyglyph">&#3632;</td>
+			</tr>
+			<tr>
+			<td>  MAI HAN-AKAT </td>
+			<td class="mightyglyph">&#3633;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA AA (  SARA AA)</td>
+			<td class="mightyglyph">&#3634;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA AM ( VOWEL SIGN SARA AM)</td>
+			<td class="mightyglyph">&#3635;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA I ( VOWEL SIGN SARA I)</td>
+			<td class="mightyglyph">&#3636;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA II ( VOWEL SIGN SARA II)</td>
+			<td class="mightyglyph">&#3637;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA UE ( VOWEL SIGN SARA UE)</td>
+			<td class="mightyglyph">&#3638;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA UEE ( VOWEL SIGN SARA UEE)</td>
+			<td class="mightyglyph">&#3639;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA U ( VOWEL SIGN SARA U)</td>
+			<td class="mightyglyph">&#3640;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA UU ( VOWEL SIGN SARA UU)</td>
+			<td class="mightyglyph">&#3641;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN PHINTHU ( VOWEL SIGN PHINTHU)</td>
+			<td class="mightyglyph">&#3642;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN MAI TAI KHU</td>
+			<td class="mightyglyph">&#3655;</td>
+			</tr>
+			</tbody>
+		</table>
+			<h4>Before the Consonant Signs</h4>
+			<p>These vowel signs come <b>before</b> the  consonant.
+			</p>
+		<table class="chart" cellspacing="0">
+			<tbody><tr>
+			</tr><tr>
+			<th scope="col">Name</th>
+			<th scope="col">Symbol</th>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA E</td>
+			<td class="mightyglyph">&#3648;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA AE</td>
+			<td class="mightyglyph">&#3649;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA O</td>
+			<td class="mightyglyph">&#3650;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA AI MAI MUAN </td>
+			<td class="mightyglyph">&#3651;</td>
+			</tr>
+			<tr>
+			<td> VOWEL SIGN SARA AI MAI MALAI </td>
+			<td class="mightyglyph">&#3652;</td>
+			</tr>
+			</tbody>
+		</table>
+			<h2 id="tones">Tone Marks</h2>
+		<table class="chart" cellspacing="0">
+			<tbody><tr>
+			</tr><tr>
+			<th scope="col">Name</th>
+			<th scope="col">Symbol</th>
+			</tr>
+			<tr>
+			<td>  MAI EK ( TONE MAI EK)</td>
+			<td class="mightyglyph">&#3656;</td>
+			</tr>
+			<tr>
+			<td>  MAI THO ( TONE MAI THO)</td>
+			<td class="mightyglyph">&#3657;</td>
+			</tr>
+			<tr>
+			<td>  MAI TRI ( TONE MAI TRI)</td>
+			<td class="mightyglyph">&#3658;</td>
+			</tr>
+			<tr>
+			<td>  MAI CHATTAWA ( TONE MAI CHATTAWA)</td>
+			<td class="mightyglyph">&#3659;</td>
+			</tr>
+			</tbody>
+		</table>
+			<h2 id="digits"> Numbers</h2>
+		<table class="chart" cellspacing="0">
+			<tbody><tr>
+			</tr><tr>
+			<th scope="col">Name</th>
+			<th scope="col">Symbol</th>
+			</tr>
+			<tr>
+			<td> DIGIT ZERO </td>
+			<td class="mightyglyph">&#3664;</td>
+			</tr>
+			<tr>
+			<td> DIGIT ONE </td>
+			<td class="mightyglyph">&#3665;</td>
+			</tr>
+			<tr>
+			<td> DIGIT TWO </td>
+			<td class="mightyglyph">&#3666;</td>
+			</tr>
+			<tr>
+			<td> DIGIT THREE </td>
+			<td class="mightyglyph">&#3667;</td>
+			</tr>
+			<tr>
+			<td> DIGIT FOUR </td>
+			<td class="mightyglyph">&#3668;</td>
+			</tr>
+			<tr>
+			<td> DIGIT FIVE </td>
+			<td class="mightyglyph">&#3669;</td>
+			</tr>
+			<tr>
+			<td> DIGIT SIX </td>
+			<td class="mightyglyph">&#3670;</td>
+			</tr>
+			<tr>
+			<td> DIGIT SEVEN </td>
+			<td class="mightyglyph">&#3671;</td>
+			</tr>
+			<tr>
+			<td> DIGIT EIGHT </td>
+			<td class="mightyglyph">&#3672;</td>
+			</tr>
+			<tr>
+			<td> DIGIT NINE </td>
+			<td class="mightyglyph">&#3673;</td>
+			</tr>
+			</tbody>
+		</table>
+			<h2 id="punc">Punctuation and Symbols</h2>
+		<table class="chart" cellspacing="0">
+			<tbody><tr>
+			<th scope="col">Name</th>
+			<th scope="col">Symbol</th>
+			</tr>
+			<tr>
+			<td>  PAI YANNOI</td>
+			<td class="mightyglyph">&#3631;</td>
+			</tr>
+			<tr>
+			<td> CURRENCY SYMBOL BAHT</td>
+			<td class="mightyglyph">&#3647;</td>
+			</tr>
+			<tr>
+			<td>  LAK KHANG YAO </td>
+			<td class="mightyglyph">&#3653;</td>
+			</tr>
+			<tr>
+			<td>  MAI YAMOK (Repitition Mark)</td>
+			<td class="mightyglyph">&#3654;</td>
+			</tr>
+			<tr>
+			<td>  THANTHAKHAT ( THANTHAKHAT)</td>
+			<td class="mightyglyph">&#3660;</td>
+			</tr>
+			<tr>
+			<td>  NIKHAHIT ( NIKKHAHIT)</td>
+			<td class="mightyglyph">&#3661;</td>
+			</tr>
+			<tr>
+			<td>  YAMAKKAN ( YAMAKKAN)</td>
+			<td class="mightyglyph">&#3662;</td>
+			</tr>
+			<tr>
+			<td>  FONGMAN ( FONGMAN)</td>
+			<td class="mightyglyph">&#3663;</td>
+			</tr>
+			<tr>
+			<td>  ANGKHANKHU</td>
+			<td class="mightyglyph">&#3674;</td>
+			</tr>
+			<tr>
+			<td>  KHOMUT </td>
+			<td class="mightyglyph">&#3675;</td>
+			</tr>
+			</tbody>
+		</table>
+
+			<p class="anav">&nbsp;</p>
+			<p class="anav"> <a href="#top">Top of Page</a></p>
+		</div>
+
+		<div id="viewer" class="col-md-4 col-right">
+			<div id="image"></div>
+			<div id="caption"></div>
+		</div>
 	</div>
 
-	<div class="col-md-4">
-		<h2 id="consonants">Consonants</h2>
-	<table class="chart" cellspacing="0">
-		<tbody><tr>
-		</tr><tr>
-		<th scope="col">Name</th>
-		<th scope="col">Symbol</th>
-		</tr>
-		<tr>
-		<td>  KO KAI </td>
-		<td class="mightyglyph">&#3585;</td>
-		</tr>
-		<tr>
-		<td>  KHO KHAI </td>
-		<td class="mightyglyph">&#3586;</td>
-		</tr>
-		<tr>
-		<td>  KHO KHUAT</td>
-		<td class="mightyglyph">&#3587;</td>
-		</tr>
-		<tr>
-		<td>  KHO KHWAI</td>
-		<td class="mightyglyph">&#3588;</td>
-		</tr>
-		<tr>
-		<td>  KHO KHON </td>
-		<td class="mightyglyph">&#3589;</td>
-		</tr>
-		<tr>
-		<td>  KHO RAKHANG </td>
-		<td class="mightyglyph">&#3590;</td>
-		</tr>
-		<tr>
-		<td>  NGO NGU </td>
-		<td class="mightyglyph">&#3591;</td>
-		</tr>
-		<tr>
-		<td>  CHO CHAN </td>
-		<td class="mightyglyph">&#3592;</td>
-		</tr>
-		<tr>
-		<td>  CHO CHING </td>
-		<td class="mightyglyph">&#3593;</td>
-		</tr>
-		<tr>
-		<td>  CHO CHANG</td>
-		<td class="mightyglyph">&#3594;</td>
-		</tr>
-		<tr>
-		<td>  SO SO </td>
-		<td class="mightyglyph">&#3595;</td>
-		</tr>
-		<tr>
-		<td>  CHO CHOE </td>
-		<td class="mightyglyph">&#3596;</td>
-		</tr>
-		<tr>
-		<td>  YO YING </td>
-		<td class="mightyglyph">&#3597;</td>
-		</tr>
-		<tr>
-		<td>  DO CHADA </td>
-		<td class="mightyglyph">&#3598;</td>
-		</tr>
-		<tr>
-		<td>  TO PATAK </td>
-		<td class="mightyglyph">&#3599;</td>
-		</tr>
-		<tr>
-		<td>  THO THAN </td>
-		<td class="mightyglyph">&#3600;</td>
-		</tr>
-		<tr>
-		<td>  THO NANGMONTHO </td>
-		<td class="mightyglyph">&#3601;</td>
-		</tr>
-		<tr>
-		<td>  THO PHUTHAO </td>
-		<td class="mightyglyph">&#3602;</td>
-		</tr>
-		<tr>
-		<td>  NO NEN </td>
-		<td class="mightyglyph">&#3603;</td>
-		</tr>
-		<tr>
-		<td>  DO DEK </td>
-		<td class="mightyglyph">&#3604;</td>
-		</tr>
-		<tr>
-		<td>  TO TAO </td>
-		<td class="mightyglyph">&#3605;</td>
-		</tr>
-		<tr>
-		<td>  THO THUNG</td>
-		<td class="mightyglyph">&#3606;</td>
-		</tr>
-		<tr>
-		<td>  THO THAHAN </td>
-		<td class="mightyglyph">&#3607;</td>
-		</tr>
-		<tr>
-		<td>  THO THONG</td>
-		<td class="mightyglyph">&#3608;</td>
-		</tr>
-		<tr>
-		<td>  NO NU </td>
-		<td class="mightyglyph">&#3609;</td>
-		</tr>
-		<tr>
-		<td>  BO BAIMAI </td>
-		<td class="mightyglyph">&#3610;</td>
-		</tr>
-		<tr>
-		<td>  PO PLA </td>
-		<td class="mightyglyph">&#3611;</td>
-		</tr>
-		<tr>
-		<td>  PHO PHUNG</td>
-		<td class="mightyglyph">&#3612;</td>
-		</tr>
-		<tr>
-		<td>  FO FA </td>
-		<td class="mightyglyph">&#3613;</td>
-		</tr>
-		<tr>
-		<td>  PHO PHAN </td>
-		<td class="mightyglyph">&#3614;</td>
-		</tr>
-		<tr>
-		<td>  FO FAN </td>
-		<td class="mightyglyph">&#3615;</td>
-		</tr>
-		<tr>
-		<td>  PHO SAMPHAO </td>
-		<td class="mightyglyph">&#3616;</td>
-		</tr>
-		<tr>
-		<td>  MO MA </td>
-		<td class="mightyglyph">&#3617;</td>
-		</tr>
-		<tr>
-		<td>  YO YAK </td>
-		<td class="mightyglyph">&#3618;</td>
-		</tr>
-		<tr>
-		<td>  RO RUA </td>
-		<td class="mightyglyph">&#3619;</td>
-		</tr>
-		<tr>
-		<td>  RU </td>
-		<td class="mightyglyph">&#3620;</td>
-		</tr>
-		<tr>
-		<td>  LO LING </td>
-		<td class="mightyglyph">&#3621;</td>
-		</tr>
-		<tr>
-		<td>  LU</td>
-		<td class="mightyglyph">&#3622;</td>
-		</tr>
-		<tr>
-		<td>  WO WAEN </td>
-		<td class="mightyglyph">&#3623;</td>
-		</tr>
-		<tr>
-		<td>  SO SALA </td>
-		<td class="mightyglyph">&#3624;</td>
-		</tr>
-		<tr>
-		<td>  SO RUSI</td>
-		<td class="mightyglyph">&#3625;</td>
-		</tr>
-		<tr>
-		<td>  SO SUA </td>
-		<td class="mightyglyph">&#3626;</td>
-		</tr>
-		<tr>
-		<td>  HO HIP </td>
-		<td class="mightyglyph">&#3627;</td>
-		</tr>
-		<tr>
-		<td>  LO CHULA </td>
-		<td class="mightyglyph">&#3628;</td>
-		</tr>
-		<tr>
-		<td>  O ANG </td>
-		<td class="mightyglyph">&#3629;</td>
-		</tr>
-		<tr>
-		<td>  HO NOKHUK </td>
-		<td class="mightyglyph">&#3630;</td>
-		</tr>
-		</tbody>
-	</table>
-		<h2 id="vowels">Vowels</h2>
-		<p>These vowel signs come <b>above or after</b> the  consonant.</p>
-		<h4>Above/After the Consonant Signs</h4>
-	<table class="chart" cellspacing="0">
-		<tbody><tr>
-		</tr><tr>
-		<th scope="col">Name</th>
-		<th scope="col">Symbol</th>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA A</td>
-		<td class="mightyglyph">&#3632;</td>
-		</tr>
-		<tr>
-		<td>  MAI HAN-AKAT </td>
-		<td class="mightyglyph">&#3633;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA AA (  SARA AA)</td>
-		<td class="mightyglyph">&#3634;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA AM ( VOWEL SIGN SARA AM)</td>
-		<td class="mightyglyph">&#3635;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA I ( VOWEL SIGN SARA I)</td>
-		<td class="mightyglyph">&#3636;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA II ( VOWEL SIGN SARA II)</td>
-		<td class="mightyglyph">&#3637;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA UE ( VOWEL SIGN SARA UE)</td>
-		<td class="mightyglyph">&#3638;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA UEE ( VOWEL SIGN SARA UEE)</td>
-		<td class="mightyglyph">&#3639;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA U ( VOWEL SIGN SARA U)</td>
-		<td class="mightyglyph">&#3640;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA UU ( VOWEL SIGN SARA UU)</td>
-		<td class="mightyglyph">&#3641;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN PHINTHU ( VOWEL SIGN PHINTHU)</td>
-		<td class="mightyglyph">&#3642;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN MAI TAI KHU</td>
-		<td class="mightyglyph">&#3655;</td>
-		</tr>
-		</tbody>
-	</table>
-		<h4>Before the Consonant Signs</h4>
-		<p>These vowel signs come <b>before</b> the  consonant.
-		</p>
-	<table class="chart" cellspacing="0">
-		<tbody><tr>
-		</tr><tr>
-		<th scope="col">Name</th>
-		<th scope="col">Symbol</th>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA E</td>
-		<td class="mightyglyph">&#3648;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA AE</td>
-		<td class="mightyglyph">&#3649;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA O</td>
-		<td class="mightyglyph">&#3650;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA AI MAI MUAN </td>
-		<td class="mightyglyph">&#3651;</td>
-		</tr>
-		<tr>
-		<td> VOWEL SIGN SARA AI MAI MALAI </td>
-		<td class="mightyglyph">&#3652;</td>
-		</tr>
-		</tbody>
-	</table>
-		<h2 id="tones">Tone Marks</h2>
-	<table class="chart" cellspacing="0">
-		<tbody><tr>
-		</tr><tr>
-		<th scope="col">Name</th>
-		<th scope="col">Symbol</th>
-		</tr>
-		<tr>
-		<td>  MAI EK ( TONE MAI EK)</td>
-		<td class="mightyglyph">&#3656;</td>
-		</tr>
-		<tr>
-		<td>  MAI THO ( TONE MAI THO)</td>
-		<td class="mightyglyph">&#3657;</td>
-		</tr>
-		<tr>
-		<td>  MAI TRI ( TONE MAI TRI)</td>
-		<td class="mightyglyph">&#3658;</td>
-		</tr>
-		<tr>
-		<td>  MAI CHATTAWA ( TONE MAI CHATTAWA)</td>
-		<td class="mightyglyph">&#3659;</td>
-		</tr>
-		</tbody>
-	</table>
-		<h2 id="digits"> Numbers</h2>
-	<table class="chart" cellspacing="0">
-		<tbody><tr>
-		</tr><tr>
-		<th scope="col">Name</th>
-		<th scope="col">Symbol</th>
-		</tr>
-		<tr>
-		<td> DIGIT ZERO </td>
-		<td class="mightyglyph">&#3664;</td>
-		</tr>
-		<tr>
-		<td> DIGIT ONE </td>
-		<td class="mightyglyph">&#3665;</td>
-		</tr>
-		<tr>
-		<td> DIGIT TWO </td>
-		<td class="mightyglyph">&#3666;</td>
-		</tr>
-		<tr>
-		<td> DIGIT THREE </td>
-		<td class="mightyglyph">&#3667;</td>
-		</tr>
-		<tr>
-		<td> DIGIT FOUR </td>
-		<td class="mightyglyph">&#3668;</td>
-		</tr>
-		<tr>
-		<td> DIGIT FIVE </td>
-		<td class="mightyglyph">&#3669;</td>
-		</tr>
-		<tr>
-		<td> DIGIT SIX </td>
-		<td class="mightyglyph">&#3670;</td>
-		</tr>
-		<tr>
-		<td> DIGIT SEVEN </td>
-		<td class="mightyglyph">&#3671;</td>
-		</tr>
-		<tr>
-		<td> DIGIT EIGHT </td>
-		<td class="mightyglyph">&#3672;</td>
-		</tr>
-		<tr>
-		<td> DIGIT NINE </td>
-		<td class="mightyglyph">&#3673;</td>
-		</tr>
-		</tbody>
-	</table>
-		<h2 id="punc">Punctuation and Symbols</h2>
-	<table class="chart" cellspacing="0">
-		<tbody><tr>
-		<th scope="col">Name</th>
-		<th scope="col">Symbol</th>
-		</tr>
-		<tr>
-		<td>  PAI YANNOI</td>
-		<td class="mightyglyph">&#3631;</td>
-		</tr>
-		<tr>
-		<td> CURRENCY SYMBOL BAHT</td>
-		<td class="mightyglyph">&#3647;</td>
-		</tr>
-		<tr>
-		<td>  LAK KHANG YAO </td>
-		<td class="mightyglyph">&#3653;</td>
-		</tr>
-		<tr>
-		<td>  MAI YAMOK (Repitition Mark)</td>
-		<td class="mightyglyph">&#3654;</td>
-		</tr>
-		<tr>
-		<td>  THANTHAKHAT ( THANTHAKHAT)</td>
-		<td class="mightyglyph">&#3660;</td>
-		</tr>
-		<tr>
-		<td>  NIKHAHIT ( NIKKHAHIT)</td>
-		<td class="mightyglyph">&#3661;</td>
-		</tr>
-		<tr>
-		<td>  YAMAKKAN ( YAMAKKAN)</td>
-		<td class="mightyglyph">&#3662;</td>
-		</tr>
-		<tr>
-		<td>  FONGMAN ( FONGMAN)</td>
-		<td class="mightyglyph">&#3663;</td>
-		</tr>
-		<tr>
-		<td>  ANGKHANKHU</td>
-		<td class="mightyglyph">&#3674;</td>
-		</tr>
-		<tr>
-		<td>  KHOMUT </td>
-		<td class="mightyglyph">&#3675;</td>
-		</tr>
-		</tbody>
-	</table>
+	<script src="js/OSC.js"></script>
+	<script src="js/character-viewer.js"></script>
+	<script src="js/header.js"></script>
 
-		<p class="anav">&nbsp;</p>
-		<p class="anav"> <a href="#top">Top of Page</a></p>
-	</div>
-
-	<div id="viewer" class="col-md-4 col-right">
-		<div id="image"></div>
-		<div id="caption"></div>
-	</div>
-
-</div>
-
-
-<script type="text/javascript" src="language.js"></script>
-<script src='OSC.js'></script>
-	<script>
-		canvas = O('mycanvas')
-		context = canvas.getContext('2d')
-		S(canvas).background = 'transparent'
-		
-		context.font = 'bold 140px Times'
-		context.textBaseline = 'top'
-		
-		image = new Image()
-		image.src = 'wicker.jpg'
-		
-		image.onload = function()
-		{
-			pattern = context.createPattern(image, 'repeat')
-			context.fillStyle = pattern
-			context.fillText('Thai Alphabet', 150, 0)
-			context.strokeText('Thai Alphabet', 150, 0)
-		}
-		
-	</script>
 </body>
 </html>
