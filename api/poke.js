@@ -34,8 +34,11 @@ $(function () {
         })
 
         request.done(function (data) {
-            $('.pokedex h3').text(data.name.toUpperCase())
+            $('.pokedex h3').text(pokemonSearch + ": " + data.name.toUpperCase())
             $('.poke-img img').attr('src', data.sprites.front_default)
+            $('.pokename').val('')
+            // $('.pokename').text()
+
         })
 
         request.fail(function (jqXHR, textStatus, error) {
@@ -45,6 +48,7 @@ $(function () {
     })
 
     $('.btn2').on('click', function () {
+        $('.scroll').addClass('active')
         out = $('.pokedex input[type="text"]').val()
 
         var request = $.ajax({
@@ -55,8 +59,9 @@ $(function () {
         request.done(function (data) {
             let mylist = '';
             for (x in data.results) {
+                y = parseInt(x) + 1
                 mylist += '<option value="' + data.results[x].url + '">' +
-                    data.results[x].name + '</option>'
+                y + ": " + data.results[x].name + '</option>'
             }
             $('.output').append(mylist)
         })
@@ -77,8 +82,11 @@ $(function () {
         console.log(request)
 
         request.done(function (data) {
-            $('.pokedex h3').text(data.name.toUpperCase())
+            console.table(data)
+            $('.pokedex h3').text(data.id + ": " + data.name.toUpperCase())
             $('.poke-img img').attr('src', data.sprites.front_default)
+            $('.pokename').val('')
+
         })
 
         request.fail(function (jqXHR, textStatus, error) {
