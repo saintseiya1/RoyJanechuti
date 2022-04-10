@@ -81,10 +81,16 @@ body {
 .poke-img img {
     width: 100%;
 }
+
 .scroll {
     position: absolute;
     left: 0;
     top: 0;
+    display: none;
+}
+
+.scroll.active {
+    display: flex;
 }
 
 
