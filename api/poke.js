@@ -34,7 +34,7 @@ $(function () {
         })
 
         request.done(function (data) {
-            $('.pokedex h3').text(pokemonSearch + ": " + data.name.toUpperCase())
+            $('.pokedex h3').text(data.id + ": " + data.name.toUpperCase())
             $('.poke-img img').attr('src', data.sprites.front_default)
             $('.pokename').val('')
             // $('.pokename').text()
