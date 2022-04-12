@@ -34,11 +34,17 @@ $(function () {
         })
 
         request.done(function (data) {
-            $('.pokedex h3').text(data.id + ": " + data.name.toUpperCase())
             $('.poke-img img').attr('src', data.sprites.front_default)
+            $('.pokedex h3').text(data.name.toUpperCase())
+            mytext = `
+                <ul>
+                    <li>ID: ${data.id}</li>
+                    <li>Base Experience: ${data.base_experience}</li>
+                    <li>Height: ${data.height}</li>
+                    <li>Weight: ${data.weight}</li>
+                </ul>`
+            $('.poke-stats').html(mytext)
             $('.pokename').val('')
-            // $('.pokename').text()
-
         })
 
         request.fail(function (jqXHR, textStatus, error) {
@@ -79,26 +85,23 @@ $(function () {
             url: poke,
             method: "GET"
         })
-        console.log(request)
 
         request.done(function (data) {
-            console.table(data)
-            $('.pokedex h3').text(data.id + ": " + data.name.toUpperCase())
             $('.poke-img img').attr('src', data.sprites.front_default)
+            $('.pokedex h3').text(data.name.toUpperCase())
+            mytext = `
+                <ul>
+                    <li>ID: ${data.id}</li>
+                    <li>Base Experience: ${data.base_experience}</li>
+                    <li>Height: ${data.height}</li>
+                    <li>Weight: ${data.weight}</li>
+                </ul>`
+            $('.poke-stats').html(mytext)
             $('.pokename').val('')
-
         })
 
         request.fail(function (jqXHR, textStatus, error) {
             alert("Request failed: " + textStatus + ' ' + error)
         })
     })
-
-
-    //     pokemonSearch = $('.pokedex input[type="text"]').val()
-
-
-
-    // })
-
 })
