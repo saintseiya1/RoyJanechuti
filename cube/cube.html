@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 	<style type="text/css">
 
 		body {
@@ -86,9 +90,51 @@
             }
         }
 
+
+        .test {
+            width: 200px;
+            height: 200px;
+            animation-fill-mode: forwards;
+
+
+            display: inline-block;
+            animation: bounceIn 1s 1s;
+        }
+
+/*        .bb
+        {
+            font-family: cursive;
+            font-size: 2rem;
+            color: white;
+            display: inline-block;
+            opacity: 0;
+            animation: bounceIn 1s 1s;
+            animation-fill-mode: forwards;
+            min-width: 10px;
+}*/
+
+    .bb {            
+        font-family: cursive;
+        font-size: 2rem;
+        color: white;
+        min-width: 10px;
+        display: inline-block;
+    }
+
+    .bb:hover {
+            animation: rubberBand 1s;
+            color: #ffd700;
+            cursor: pointer;
+    }
+
 	</style>
 </head>
 <body>
+    <div class="test">
+        <span class="bb">R</span>
+        <span class="bb">o</span>
+        <span class="bb">y</span>
+    </div>
     <div class="stage-cube-cont">
         <div class="cubespinner">
             <div class="face1">
