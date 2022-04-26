@@ -34,12 +34,12 @@ html{
 }
 .mg-page{
   background-color: #f1f5fe;
-  height: 100vh;
+  height: 80vh;
 /*  overflow: hidden;
 */  display: flex;
 }
 .mg-page__left{
-  padding: 200px 20px 0 20px;
+  padding: 70px 20px 0 20px;
   width: 30%;
 }
 .forms-two-col{
