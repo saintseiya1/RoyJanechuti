@@ -192,8 +192,8 @@ html{
   width: 100%;
 }
 .image-panel:hover{
-  opacity: .4;
-}
+/*  opacity: .4;
+*/}
 .info{
   width: 100%;
   color: var(--dark_text_color);
